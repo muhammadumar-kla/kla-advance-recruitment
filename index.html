@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KLA Computer Career | Powered by KIRANA.AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        :root { --kla-purple: #481969; --kla-yellow: #ffc50b; }
-        .bg-kla-purple { background-color: var(--kla-purple); }
-        .text-kla-yellow { color: var(--kla-yellow); }
-        .border-kla-yellow { border-color: var(--kla-yellow); }
-    </style>
+    :root { --kla-purple: #481969; --kla-yellow: #ffc50b; }
+    /* Mengaktifkan font Outfit */
+    body { font-family: 'Outfit', sans-serif; }
+    .bg-kla-purple { background-color: var(--kla-purple); }
+    .text-kla-yellow { color: var(--kla-yellow); }
+    .border-kla-yellow { border-color: var(--kla-yellow); }
+</style>
 </head>
 <body class="bg-gray-50 font-sans">
 
@@ -18,7 +23,11 @@
         <img src="KIRANA.jpg" alt="Kirana AI" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-kla-yellow object-cover">
         <img src="LOGO KLA COMPUTER.webp" alt="KLA Logo" class="h-12 mx-auto mb-2">
         <h1 class="text-4xl font-bold mb-4 text-kla-yellow">KLA COMPUTER</h1>
-        <p class="text-xl max-w-2xl mx-auto">Membangun ekosistem retail laptop terbaik dengan integritas dan teknologi tinggi.</p>
+        <div class="text-xl max-w-3xl mx-auto leading-relaxed space-y-4">
+            <p>Pusat retail Laptop, PC, dan Aksesoris terlengkap.</p>
+            <p class="text-2xl font-bold text-kla-yellow">Komplit. Nyaman. Bergaransi.</p>
+            <p>Visi kami menjadi Top Brand Nomor 1 di Indonesia.</p>
+        </div>
     </header>
 
     <section class="max-w-4xl mx-auto py-12 px-6 grid md:grid-cols-2 gap-8">
