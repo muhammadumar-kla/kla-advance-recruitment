@@ -48,27 +48,38 @@
     <section class="bg-white max-w-2xl mx-auto my-12 p-8 rounded-lg shadow-lg border-t-4 border-kla-yellow">
         <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">Form Aplikasi Pelamar</h2>
         
-        <form action="URL_WEBHOOK_N8N_MAS_DI_SINI" method="POST" enctype="multipart/form-data">
-            <div class="mb-4">
-                <label class="block text-gray-700 font-bold mb-2">Nama Lengkap</label>
-                <input type="text" name="nama" required class="w-full border border-gray-300 p-2 rounded focus:outline-none focus:border-kla-purple">
-            </div>
-            <div class="mb-4">
-                <label class="block text-gray-700 font-bold mb-2">Posisi yang Dilamar</label>
-                <select name="posisi" class="w-full border border-gray-300 p-2 rounded">
-                    <option value="Store Leader">Store Leader</option>
-                    <option value="Sales Laptop">Sales Laptop</option>
-                    <option value="Admin">Admin Retail</option>
-                </select>
-            </div>
-            <div class="mb-6">
-                <label class="block text-gray-700 font-bold mb-2">Upload CV (PDF)</label>
-                <input type="file" name="cv" accept="application/pdf" required class="w-full text-gray-600">
-            </div>
-            <button type="submit" class="bg-kla-purple text-kla-yellow font-bold w-full py-3 rounded hover:opacity-90 transition">
-                KIRIM LAMARAN (Analisis by KIRANA.AI)
-            </button>
-        </form>
+     <form action="https://umarkla.app.n8n.cloud/webhook-test/rekrutmen-kla-v1" method="POST" enctype="multipart/form-data">
+    
+    <div class="space-y-4">
+        <div>
+            <label class="block text-gray-700 font-bold mb-1">Nama Lengkap</label>
+            <input type="text" name="nama" required class="w-full border border-gray-300 p-2 rounded focus:border-kla-purple">
+        </div>
+
+        <div>
+            <label class="block text-gray-700 font-bold mb-1">Nomor WhatsApp</label>
+            <input type="tel" name="whatsapp" placeholder="0812..." required class="w-full border border-gray-300 p-2 rounded">
+        </div>
+
+        <div>
+            <label class="block text-gray-700 font-bold mb-1">Posisi yang Dilamar</label>
+            <select name="posisi" class="w-full border border-gray-300 p-2 rounded">
+                <option value="Store Leader">Store Leader (MT)</option>
+                <option value="Sales Consultant">Sales Consultant Laptop</option>
+                <option value="Technical Support">Technical Support & Admin</option>
+            </select>
+        </div>
+
+        <div>
+            <label class="block text-gray-700 font-bold mb-1">Upload CV (Format PDF)</label>
+            <input type="file" name="cv" accept="application/pdf" required class="w-full text-sm text-gray-500">
+        </div>
+
+        <button type="submit" class="bg-kla-purple text-kla-yellow font-bold w-full py-3 rounded-lg hover:brightness-110 transition shadow-md">
+            KIRIM LAMARAN KE KIRANA.AI
+        </button>
+    </div>
+</form>
     </section>
 
     <footer class="text-center py-8 text-gray-400 text-sm">
