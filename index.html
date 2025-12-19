@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KLA Computer Career | Powered by KIRANA.AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root { --kla-purple: #481969; --kla-yellow: #ffc50b; }
+        .bg-kla-purple { background-color: var(--kla-purple); }
+        .text-kla-yellow { color: var(--kla-yellow); }
+        .border-kla-yellow { border-color: var(--kla-yellow); }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+
+    <header class="bg-kla-purple text-white py-16 px-6 text-center">
+        <h1 class="text-4xl font-bold mb-4 text-kla-yellow">KLA COMPUTER</h1>
+        <p class="text-xl max-w-2xl mx-auto">Membangun ekosistem retail laptop terbaik dengan integritas dan teknologi tinggi.</p>
+    </header>
+
+    <section class="max-w-4xl mx-auto py-12 px-6 grid md:grid-cols-2 gap-8">
+        <div>
+            <h2 class="text-2xl font-bold mb-4 text-gray-800">Visi Kami</h2>
+            <p class="text-gray-600">Menjadi pemimpin pasar retail teknologi yang memberdayakan masyarakat melalui akses alat kerja yang efisien.</p>
+        </div>
+        <div>
+            <h2 class="text-2xl font-bold mb-4 text-gray-800">Misi Kami</h2>
+            <ul class="list-disc list-inside text-gray-600">
+                <li>Mengutamakan kejujuran dan integritas.</li>
+                <li>Membangun tim yang High-Agency dan mandiri.</li>
+                <li>Implementasi teknologi terbaru di setiap lini.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="bg-white max-w-2xl mx-auto my-12 p-8 rounded-lg shadow-lg border-t-4 border-kla-yellow">
+        <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">Form Aplikasi Pelamar</h2>
+        
+        <form action="URL_WEBHOOK_N8N_MAS_DI_SINI" method="POST" enctype="multipart/form-data">
+            <div class="mb-4">
+                <label class="block text-gray-700 font-bold mb-2">Nama Lengkap</label>
+                <input type="text" name="nama" required class="w-full border border-gray-300 p-2 rounded focus:outline-none focus:border-kla-purple">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 font-bold mb-2">Posisi yang Dilamar</label>
+                <select name="posisi" class="w-full border border-gray-300 p-2 rounded">
+                    <option value="Store Leader">Store Leader</option>
+                    <option value="Sales Laptop">Sales Laptop</option>
+                    <option value="Admin">Admin Retail</option>
+                </select>
+            </div>
+            <div class="mb-6">
+                <label class="block text-gray-700 font-bold mb-2">Upload CV (PDF)</label>
+                <input type="file" name="cv" accept="application/pdf" required class="w-full text-gray-600">
+            </div>
+            <button type="submit" class="bg-kla-purple text-kla-yellow font-bold w-full py-3 rounded hover:opacity-90 transition">
+                KIRIM LAMARAN (Analisis by KIRANA.AI)
+            </button>
+        </form>
+    </section>
+
+    <footer class="text-center py-8 text-gray-400 text-sm">
+        &copy; 2025 PT Kla Teknologi Indonesia. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
